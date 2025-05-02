@@ -12,7 +12,10 @@ const useFetchData = (url) => {
       setError(null);
       try {
         const response = await axios.get(url);
-        setData((prevData) => [...prevData, ...response.data.items || response.data]);
+        setData((prevData) => [
+          ...prevData,
+          ...(response.data.items || response.data),
+        ]);
       } catch (err) {
         setError("Error fetching data");
       } finally {
@@ -23,7 +26,7 @@ const useFetchData = (url) => {
     if (url) {
       fetchData();
     }
-  }, [url]); 
+  }, [url]);
 
   return { data, loading, error };
 };
