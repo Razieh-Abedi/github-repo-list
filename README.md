@@ -1,7 +1,7 @@
 GitHub Most Starred Repositories (Last 10 Days)
 This web app displays the most starred GitHub repositories created in the last 10 days. The repositories are fetched from GitHub's API and displayed in a responsive, user-friendly interface. New repositories are loaded as the user scrolls down the page.
 
-<video controls src="Kapture 2026-03-22 at 11.35.44.mp4" title="Title"></video>
+![Demo](demo.gif)
 
 Features
 Most Starred Repos: Displays repositories created in the last 10 days, sorted by stars.
